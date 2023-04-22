@@ -1,4 +1,4 @@
-name: hello-world
+name: Makefile
 on: push
 jobs:
   build:
