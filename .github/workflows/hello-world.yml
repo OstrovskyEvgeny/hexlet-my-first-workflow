@@ -6,12 +6,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/checkout@master
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18
-          cache: 'npm'
       - run: make say-hello
-      - name: Run Snyk to check for vulnerabilities
-        uses: snyk/actions/node@master
-        env:
-          SNYK_TOKEN: ${{ secrets.e0c2b01c-ff03-454d-9fc5-e9f9ed8e3469 }}
